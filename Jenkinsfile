@@ -2,10 +2,10 @@ pipeline {
   agent any
 
   environment {
-    AZURE_WEBAPP_NAME = 'hello-world-app'
-    AZURE_RG = 'rg-demo'
-    AZURE_PLAN = 'app-service-plan'
-    AZURE_SUBSCRIPTION = 'your-subscription-id'
+    AZURE_WEBAPP_NAME = 'hello-andi'
+    AZURE_RG = 'andi'
+    AZURE_PLAN = 'ASP-andi-8aaf (F1: 1)'
+    AZURE_SUBSCRIPTION = '81d14c1d-9801-4282-9122-88806efe5bc4'
   }
 
   tools {
@@ -15,7 +15,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/your-username/hello-world-app.git'
+        git 'https://github.com/andonebekasi/jenkins-test.git'
       }
     }
 
