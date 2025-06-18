@@ -2,10 +2,10 @@ pipeline {
   agent any
 
   environment {
-    AZURE_WEBAPP_NAME = 'hello-andi'
-    AZURE_RG = 'andi'
-    AZURE_PLAN = 'ASP-andi-8aaf (F1: 1)'
-    AZURE_SUBSCRIPTION = '81d14c1d-9801-4282-9122-88806efe5bc4'
+    AZURE_WEBAPP_NAME = ''
+    AZURE_RG = ''
+    AZURE_PLAN = ''
+    AZURE_SUBSCRIPTION = ''
   }
 
   tools {
