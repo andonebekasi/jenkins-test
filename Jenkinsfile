@@ -9,7 +9,7 @@ pipeline {
   }
 
   tools {
-    nodejs 'NodeJS_14' // pastikan label ini sama persis dengan yang Anda install di Jenkins
+    nodejs 'NodeJS 14' // ✔️ Perbaiki di sini
   }
 
   stages {
@@ -27,7 +27,7 @@ pipeline {
 
     stage('Unit Test') {
       steps {
-        sh 'npm test || true' // agar pipeline tidak gagal jika belum ada test
+        sh 'npm test || true'
       }
     }
 
